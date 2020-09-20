@@ -12,9 +12,14 @@ namespace api.Services
 
         private static int Factorial(int n)
         {
-            var x = 1;
-            while (n != 1) x *= n--;
-            return n;
+            int i, fact = 1;
+
+            for (i = 1; i <= n; i++)
+            {
+                fact = fact * i;
+            }
+
+            return fact;
         }
     }
 }
