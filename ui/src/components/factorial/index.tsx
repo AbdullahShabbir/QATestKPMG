@@ -21,9 +21,9 @@ export const Factorial = () => {
                 Then the correct result is displayed on the page.
             </p>
             <form>
-                <input type="text" placeholder="Enter Number" />
+                <input id="factInput" type="text" placeholder="Enter Number" />
                 <br />
-                <button onClick={() => getFactorial()}>Submit</button>
+                <button id="factBtn" onClick={() => getFactorial()}>Submit</button>
             </form>
 
             <p>The factorial is {JSON.stringify(fact)}</p>
